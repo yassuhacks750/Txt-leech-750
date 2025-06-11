@@ -74,8 +74,8 @@ BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact"
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="hii"),
-            InlineKeyboardButton(text="🛠️ Repo", url="Hii"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://ik.imagekit.io/pqmtwh2fn/file_00000000995061f8bb61d5e0580022ba.png"),
+            InlineKeyboardButton(text="🛠️ Repo", url="https://ik.imagekit.io/pqmtwh2fn/file_00000000995061f8bb61d5e0580022ba.png"),
         ],
     ]
 )
@@ -358,7 +358,7 @@ async def start_command(bot: Client, message: Message):
         chat_id=message.chat.id,
         photo=random_image_url,
         caption=caption,
-        reply_markup=none
+        reply_markup=keyboard 
     )
 
 @bot.on_message(filters.command(["id"]))
